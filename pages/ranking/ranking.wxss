@@ -1,0 +1,201 @@
+.header{
+  overflow-y: scroll;
+  display: flex;
+background:#fff;
+}
+.header .item{
+    font-size: 14px;
+    line-height: 90rpx;
+    font-weight: 500;
+}
+.header .item .name
+{
+    display:block;width:120rpx;text-align: center;color:#666;
+}
+.header .item .name.active{
+    color: #18c1d6
+}
+.column{
+    overflow-y: scroll;
+    display: flex;
+    background:#eee;
+}
+.column .item{
+    font-size: 12px;
+    line-height: 60rpx;
+    font-weight: 500;
+}
+.column .item .name{
+    display:block;width:120rpx;text-align: center;color:#666;margin: 8px 30rpx;border-radius: 30rpx
+}
+.column .item .name.active{
+    color: #fff;
+    background: #222
+}
+/* .list{
+    width: 100%;
+} */
+.list .imgwh{
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+.list .match .title{
+    text-align: center;
+    font-size: 14px;
+    margin: 20rpx 0;
+    background: #e1e1e1;
+    line-height: 60rpx;
+}
+.list .match .itembox{
+    padding: 0 10rpx;
+    line-height: 60rpx;
+    display: flex;
+    justify-content: space-between;
+}
+.list .match .itembox .per-half{
+    
+    font-size: 13px;
+    
+}
+.list .match .itembox .per-half.first{
+    text-align: right;
+    width: 28%;
+}
+.list .match .itembox .per-half.center{
+    text-align: right;
+     width: 14%;
+     text-align: center;
+}
+.list .match .itembox .per-half.last{
+    text-align: left;
+    width: 28%;
+}
+.list .match .itembox .m-half{
+    width: 30%;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+}
+.list .match .itembox .item{
+    
+    font-size: 13px
+}
+
+.list .jifen .title{
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    border-bottom: 1px solid #eee;
+
+}
+.list .jifen .itembox {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+}
+.list .jifen .itembox .half,
+.list .jifen .title .half{
+    width: 50%;
+    display: flex;  
+    font-size: 13px;
+    padding: 0 10rpx;
+    line-height: 60rpx;
+}
+.list .jifen .itembox .half.halfcolum,
+.list .jifen .title .half.halfcolum{
+    justify-content: space-between;
+}
+.list .jifen .itembox .first{
+    width: 30rpx;
+}
+.list .jifen .title .first{
+    width: 160rpx;
+}
+.list .jifen .itembox .item,
+.list .jifen .title .item{
+    text-align: center;    
+}
+.list .jifen .title .item{
+    line-height: 80rpx;
+    color: #222
+}
+
+.list .goal .title{
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    border-bottom: 1px solid #eee;
+    line-height: 60rpx;
+    padding: 0 10rpx;
+    
+}
+.list .goal .title .colum36{
+    text-indent: 48rpx;
+}
+.list .goal .itembox{
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    padding: 0 10rpx
+}
+.colum20{
+    width: 20%
+}
+.colum10{
+    width: 10%
+}
+.colum30{
+    width: 30%
+}
+.colum40{
+    width: 40%
+}
+
+.colum36{
+    width: 36%
+}
+.colum44{
+    width: 44%
+}
+.colum48{
+    width: 48%
+}
+.colum38{
+    width: 38%
+}
+.center{
+    text-align: center;
+}
+.tleft{
+    text-align: left
+}
+.list .goal .itembox .colum20{
+    width: 20%;
+    text-align: center;
+}
+
+.o-title{
+    text-align: center;
+    line-height: 60rpx;
+    background: #eee;
+    font-size: 13px;
+}
+.o-box{
+    display: flex;
+    justify-content: space-between;
+}
+.o-box .o-half{
+    display: flex;
+    width: 50%;
+    font-size: 13px;
+    padding: 0 10rpx;
+}
+.o-box .o-halfcolum{
+    justify-content: space-between;
+}
+.o-box .o-halfcolum .item{
+    width: 16.6666%;
+    text-align: center;
+    line-height: 50rpx;
+}

@@ -1,0 +1,25 @@
+<import src="templates/commentitem.wxml"/>
+<view-scroll scroll-y="true">
+  <view class="comment">
+    <block wx:if="{{hotcomment.length}}">
+      <view class="hot">热门评论</view>
+      <view class="comment-item" wx:for="{{hotcomment}}" wx:key="index">
+        <template is="commentitem" data="{{item}}"/>
+      </view>
+    </block>
+    <block wx:if="{{newcomment.length}}">
+      <view class="hot">最新评论</view>
+      <view class="comment-item" wx:for="{{newcomment}}" wx:key="index">
+        <template is="commentitem" data="{{item}}"/>
+      </view>
+    </block>
+    <block wx:else>
+      <view class="hot">暂无内容</view>
+    </block>
+  </view>
+</view-scroll>
+
+<view class="loading">
+    <view wx:if="{{hasMore}}"><text>玩命加载中...</text></view>
+    <view wx:else><text>没有更多内容了</text></view>
+</view>

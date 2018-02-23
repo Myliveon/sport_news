@@ -1,0 +1,38 @@
+<import src="templates/match.wxml"/>
+<import src="templates/goal.wxml"/>
+<import src="templates/jifen.wxml"/>
+<import src="templates/assist.wxml"/>
+<scroll-view>
+    <view class="header">
+        <view wx:for="{{datas}}" wx:key="label" class="item" >
+            <view class="name {{currentTab==index ? 'active' : ''}}" data-current="{{index}}" bindtap="handleClick">{{item.name}}</view>
+        </view>
+    </view>
+</scroll-view>
+<scroll-view>
+    <view class="column">
+        <view wx:for="{{datachild}}" wx:key="name" class="item" >
+            <view class="name {{currentchild==index ? 'active' : ''}}" data-current="{{index}}" bindtap="childClick">{{item.name}}</view>
+        </view>
+    </view>
+</scroll-view> 
+<scroll-view>
+  <view class="list">
+    <block wx:if="{{flag=='match'}}">
+      
+      <template is="match" data="{{listbox: listbox}}"/>
+    </block>
+    <block wx:if="{{flag=='goal'}}">
+      
+      <template is="goal" data="{{listbox: listbox}}"/>
+    </block>
+    <block wx:if="{{flag=='jifen'}}">
+      
+      <template is="jifen" data="{{listbox: listbox}}"/>
+    </block>
+    <block wx:if="{{flag=='assist'}}">
+      
+      <template is="assist" data="{{listbox: listbox}}"/>
+    </block>
+  </view>
+</scroll-view> 

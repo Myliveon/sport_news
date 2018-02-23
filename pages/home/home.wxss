@@ -1,0 +1,22 @@
+.topic{
+  padding: 0 20rpx;
+  margin: 40rpx 0 10rpx;
+}
+.box{
+  display: flex;
+}
+.category{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.category image{
+  width: 134rpx;
+  height: 103rpx;
+}
+.category .title{
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 32rpx;
+}
